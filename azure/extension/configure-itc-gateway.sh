@@ -10,11 +10,11 @@ sudo apt-get update
 
 sudo rpm -U --nodeps  /home/$linuxUser/itconductor-gateway-6-65.x86_64.rpm
 
-sed -i "s-\[ACCOUNTID\]-$accountId-g" /opt/itconductor/conf/AGENT.xml
+sed -i "s-\[ACCOUNTID\]-$accountId-g" /opt/itconductor/conf/AGENT.XML
 
-sed -i "s-\[APIKEY\]-$apiKey-g" /opt/itconductor/conf/AGENT.xml
+sed -i "s-\[APIKEY\]-$apiKey-g" /opt/itconductor/conf/AGENT.XML
 
-sed -i "s-\[GATEWAYID\]-$gatewayId-g" /opt/itconductor/conf/AGENT.xml
+sed -i "s-\[GATEWAYID\]-$gatewayId-g" /opt/itconductor/conf/AGENT.XML
 
 sudo systemctl stop itconductor-gateway
 
